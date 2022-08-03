@@ -1,0 +1,127 @@
+/****************************/
+/************Main************/
+/****************************/
+
+/* Start__contact__page */
+.contact__page {
+  background: url(../images/about-us-page-heading-min.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  margin-bottom: 10rem;
+  position: relative;
+}
+.contact-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.contact-content h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.contact-content p {
+  font-size: 2rem;
+  color: #a1a1a1;
+  font-style: italic;
+}
+/* End__contact__page */
+
+/* Start__contacts */
+.contacts {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.contact__left {
+  flex-basis: 50%;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact__right {
+  align-self: flex-start;
+  flex-basis: 50%;
+}
+/* ----- */
+.contact__right__content h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.contact__right__content p {
+  font-size: 1.6rem;
+  color: #a1a1a1;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.contact__form {
+  display: grid;
+  gap: 1.5rem;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.inputs input {
+  padding: 1rem 4rem 1rem 0.5rem;
+  flex-basis: 50%;
+  font-size: 1.6rem;
+}
+textarea {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+input,
+textarea::placeholder {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.contact__btn {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.contact__btn:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+/* End__contacts */
+/****************************/
+/************Main************/
+/****************************/
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+  .contacts {
+    display: grid;
+  }
+  iframe {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+  .inputs {
+    display: grid;
+    gap: 1rem;
+  }
+}

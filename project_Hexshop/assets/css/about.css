@@ -1,0 +1,249 @@
+/****************************/
+/************Main************/
+/****************************/
+
+/* Start__page__heading  */
+.page__heading {
+  background: url(../images/about-us-page-heading-min.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 50rem;
+  margin-bottom: 10rem;
+  position: relative;
+}
+.about__company {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.about__company h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.about__company p {
+  font-size: 2rem;
+  color: #a1a1a1;
+  font-style: italic;
+}
+/* Start__page__heading  */
+
+.about {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.about-left {
+  flex-basis: 50%;
+}
+.about-right h2 {
+  font-size: 3rem;
+}
+.about-right p {
+  font-size: 1.6rem;
+  color: #a1a1a1;
+  font-style: italic;
+  margin: 1rem 0;
+}
+.about img {
+  width: 100%;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+.about-right span {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.about-right span i {
+  font-size: 4rem;
+}
+.about__icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: auto;
+  padding: 2rem;
+}
+.about__icons a {
+  background-color: transparent;
+  color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  font-size: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.9);
+  transition: transform 0.4s;
+}
+.about__icons a:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+  transform: scale(1);
+}
+
+/* Start__team */
+.title__team {
+  padding: 5rem 0;
+  text-align: center;
+}
+.title__team h2 {
+  font-size: 3rem;
+}
+.title__team p {
+  font-size: 1.6rem;
+  color: #a1a1a1;
+}
+/* --- */
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 15rem;
+}
+.team__member h4 {
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+}
+.team__member p {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #a1a1a1;
+}
+.team__members img {
+  width: 100%;
+}
+.member__image {
+  position: relative;
+}
+.overlay__team__member {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a2aad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.icons__team__member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.member__image:hover .overlay__team__member {
+  opacity: 1;
+}
+.icon__team {
+  font-size: 2.6rem;
+  color: #2a2a2a;
+  background-color: #fff;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon__team:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+/* End__team */
+
+/* Start__Services */
+.title__service {
+  padding: 4rem 0;
+  text-align: center;
+}
+.title__service h2 {
+  font-size: 3rem;
+}
+.title__service p {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #a1a1a1;
+}
+.service__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 15rem;
+}
+.service__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  padding: 2rem;
+}
+.service__item h3 {
+  font-size: 2.4rem;
+}
+.service__item p {
+  font-size: 1.4rem;
+  font-style: italic;
+  max-width: 85%;
+}
+.service__item img {
+  width: 100%;
+}
+/* End__Services */
+
+/****************************/
+/************Main************/
+/****************************/
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .about {
+    display: grid;
+    gap: 2rem;
+  }
+  .team__members {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .service__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .team__members {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .service__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+}
+/* Responsive */
